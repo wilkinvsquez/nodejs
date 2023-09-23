@@ -29,7 +29,7 @@ const postUsers = async (req, res = response) => {
 	// Guardar en BD
 	await user.save();
 
-	res.json({
+	res.status(200).json({
 		user,
 	});
 };
